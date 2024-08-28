@@ -1,0 +1,165 @@
+/* Reset some default styles */
+body h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  background-color:rgb(241, 177, 0);
+  color: #333;
+  margin:0;
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Header styles */
+header {
+  background-color:rgb(255, 255, 255));
+  color: blue;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 250px;
+  height: 200px;
+}
+
+.header-content {
+  text-align: right;
+  margin-left: 800px;
+  
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgb(255, 251, 245);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu li {
+  margin: 10px 2rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.menu a {
+  color:blue;
+  text-decoration: none;
+  text-shadow: 0 0 10px #00000023;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 5px;
+}
+
+.menu a:hover {
+  color: #0015fa;
+  background-color: #ffffff80;
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #b6b6b6;
+  border: 1px solid #fff;
+  z-index: 1;
+  box-shadow: 0 0 2px 1px #00000023;
+  width: 15vw;
+}
+
+.submenu:hover .submenu-content {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: #ffffff;
+}
+
+.submenu-content a {
+  color: black;
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NMAMIT</title>
+    <link rel="stylesheet" href="Style.css"/>
+  </head>
+  <body>
+    <div>
+        <header>
+            <div class="logo">
+              <img
+                src="nitte.png"
+                alt="Institution Logo"/>
+            </div>
+            <div class="header-content">
+                <h1>N.M.A.M. Institute of Technology</h1>
+                    <p>Nitte Deemed to Be University</p>
+                    <p>Nitte - 574 110, Karkala Taluk, Udupi District, Karnataka, India</p>
+            </div>
+          </header>
+          <div>
+          <nav>
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li class="submenu">
+                <a href="">Departments</a>
+                <ul class="submenu-content">
+                  <li>
+                    <a class="submenu-content-items" href="cse.html">
+                      Department of CSE</a>
+                  </li>
+                  <li>
+                    <a class="submenu-content-items" href="ise.html">
+                      Department of ISE</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          </div>
+    <main>
+      <section class:main content></section>
+      <Center><img src="logo.jpeg" style="height:300px;width:400px;margin-right:100px;margin-left:100px; alt:nitte" ></Center>
+      <p>Nitte Mahalinga Adyantaya Memorial Institute of Technology(NMAMIT), Nitte, established in 1986 and recognized by the All India Council for Technical Education, New Delhi, has been a constituent college of Nitte (Deemed to be University), Mangaluru,since
+        June 2022. Rank band 101-150 in the National Institutional Ranking Framework (NIRF) 2023 by Ministry of Education, Government of India, the College has been placed under ‘Platinum’ category for having high industry linkages by the AICTE-CII
+        Survey of Industry-Linked Technical Institutes 2020. NMAMIT, the off-campus centre of Nitte DU located at Nitte village, has active collaborations with several international universities and organizations for faculty and student exchanges,
+        research, internships and placements. The Institute offers UG engineering program in fifteen disciplines; Artificial Intelligence & Machine Learning (AI&ML), Artificial Intelligence & Data Science (AI&DS), Biotechnology (BT), Civil Engineering(CIV),
+        Computer & Communication Engineering (CCE), Computer Science & Engineering(CS),Computer Science (Cyber Security), Computer Science (Full Stack Development), Electrical & Electronics Engineering (E&E), Electronics & Communication Engineering
+        (E&C), Electronics (VLSI Design & Technology), Electronics & Communication Engineering (ACT), Information Science & Engineering (IS) , Mechanical Engineering(MECH) and Robotics & Artificial Intelligence (R&AI ). Out of these programs,
+        seven UG programs i.e., BT, CIV, CS,E&E, E&C, IS and MECH are accredited by NBA, New Delhi under Tier - I category till 30 June 2025. The institute also offers PG program M.Tech. in seven disciplines namely Construction Technology, Computer
+        Science & Engineering,Cyber Security, Electric Vehicle Technology, Machine Design, Structural Engineering and VLSI Design & Embedded Systems as well as MCA program. All the departments have qualified research guides for students interested
+        in taking up research work leading to Ph.D.</p>
+    </main>
+    <footer>
+      <div class="social-links">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"> </a>
+            <a href="#"><img src="instagram.jpeg" alt="Instagram"></a>
+      </div>
+      <p>@copyright 2024 NMAMIT. all right reserved</p>
+    </footer>
+  </body>
+</html>
